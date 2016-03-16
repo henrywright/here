@@ -12,7 +12,7 @@ See who's active on your WordPress site.
 
 == Description ==
 
-Here makes use of the WordPress Transients API to keep a record of who's currently online. A dot is used to indicate whether a user is "here". If a user has been inactive for _n_ minutes, the dot is removed.
+Here makes use of the WordPress Transients API to keep a record of who's currently online. A dot is used to indicate a user is "here". If a user has been inactive for _n_ minutes, the dot is removed.
 
 == Installation ==
 
