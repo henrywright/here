@@ -48,6 +48,9 @@ function here_init() {
  * Set a transient if a comment is posted.
  *
  * @since 1.0.0
+ *
+ * @param int $id The comment ID.
+ * @param object $comment The comment.
  */
 function here_insert_comment( $id, $comment ) {
 	$here = new Here( $comment->comment_author_email );
