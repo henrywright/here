@@ -1,0 +1,5 @@
+# The build directory
+dist/
+
+# The dep directory
+node_modules/
