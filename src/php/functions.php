@@ -13,6 +13,11 @@
  */
 function here_load_css() {
 
+	// Bail if this isn't a post or page.
+	if ( ! is_single() && ! is_page() ) {
+		return;
+	}
+
 	// Add default styling.
 	wp_enqueue_style( 'here', plugins_url( 'css/default.min.css', dirname( __FILE__ ) ) );
 
