@@ -1,6 +1,6 @@
 # Here
 
-Here makes use of the WordPress Transients API to keep a record of who's currently online. A dot is used to indicate a user is "here". If a user has been inactive for _n_ minutes, the dot is removed.
+Here makes use of the WordPress Transients API to keep a record of who's currently online. A green dot next to a user indicates that the user has been active within the past 15 minutes.
 
 ## Screenshots
 
