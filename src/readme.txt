@@ -29,7 +29,7 @@ If you think you've spotted a bug, please open an issue on [GitHub](https://gith
 
 == Screenshots ==
 
-1. A dot next to a user's profile image.
+1. A dot showing a user is online now.
 
 == Changelog ==
 

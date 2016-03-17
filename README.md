@@ -4,7 +4,7 @@ Here makes use of the WordPress Transients API to keep a record of who's current
 
 ## Screenshots
 
-![A dot next to a user's profile image](https://raw.githubusercontent.com/henrywright/here/master/assets/screenshot-1.png)
+![A dot showing a user is online now](https://raw.githubusercontent.com/henrywright/here/master/assets/screenshot-1.png)
 
 ## Requirements
 
