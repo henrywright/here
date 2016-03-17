@@ -7,29 +7,33 @@
  */
 
 /**
- * Enqueue the style sheet.
+ * Add stylesheets.
  *
- * @since 1.0.0
+ * @since 1.0.1
  */
-function here_enqueue_scripts() {
-	wp_enqueue_style( 'here', plugins_url( 'css/style.css', dirname( __FILE__ ) ) );
-}
+function here_load_css() {
 
-/**
- * Add extra styles.
- *
- * @since 1.0.0
- */
-function here_add_extra_styles() {
+	// Add default styling.
+	wp_enqueue_style( 'here', plugins_url( 'css/default.css', dirname( __FILE__ ) ) );
 
-	$css = '';
-	$theme = wp_get_theme();
+	$themes = array(
+		'twentysixteen',
+		'twentyfifteen',
+		'twentyfourteen',
+		'twentythirteen',
+		'twentytwelve',
+		'twentyeleven',
+		'twentyten'
+	);
+	// Get the active theme.
+	$theme = get_template();
 
-	if ( 'twentysixteen' === $theme->get( 'TextDomain' ) ) {
-		$css .= '.byline {position: relative}';
-		$css .= '.comment {position: relative}';
+	// Bail if the active theme isn't supported.
+	if ( ! in_array( $theme, $themes ) ) {
+		return;
 	}
-	wp_add_inline_style( 'here', $css );
+	// Add theme-specific styling.
+	wp_enqueue_style( "here-{$theme}", plugins_url( "css/{$theme}.css", dirname( __FILE__ ) ), array( 'here' ) );
 }
 
 /**

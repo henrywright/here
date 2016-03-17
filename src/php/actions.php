@@ -6,8 +6,7 @@
  * @subpackage Actions
  */
 
-add_action( 'wp_enqueue_scripts', 'here_enqueue_scripts',          10    );
-add_action( 'wp_enqueue_scripts', 'here_add_extra_styles',         12    );
+add_action( 'wp_enqueue_scripts', 'here_load_css',                 10    );
 add_action( 'init',               'here_init'                            );
 add_action( 'wp_insert_comment',  'here_insert_comment',           10, 2 );
 add_action( 'admin_bar_menu',     'here_filter_get_avatar_remove', 0     );
