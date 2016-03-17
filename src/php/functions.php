@@ -14,7 +14,7 @@
 function here_load_css() {
 
 	// Add default styling.
-	wp_enqueue_style( 'here', plugins_url( 'css/default.css', dirname( __FILE__ ) ) );
+	wp_enqueue_style( 'here', plugins_url( 'css/default.min.css', dirname( __FILE__ ) ) );
 
 	$themes = array(
 		'twentysixteen',
@@ -33,7 +33,7 @@ function here_load_css() {
 		return;
 	}
 	// Add theme-specific styling.
-	wp_enqueue_style( "here-{$theme}", plugins_url( "css/{$theme}.css", dirname( __FILE__ ) ), array( 'here' ) );
+	wp_enqueue_style( "here-{$theme}", plugins_url( "css/{$theme}.min.css", dirname( __FILE__ ) ), array( 'here' ) );
 }
 
 /**
