@@ -12,7 +12,7 @@ See who's online now on your WordPress site.
 
 == Description ==
 
-Here makes use of the WordPress Transients API to keep a record of who's currently online. A green dot next to a user indicates that the user has been active within the past 15 minutes.
+Here makes use of the WordPress Transients API to keep a record of who's currently online. A green dot will appear next to each active user.
 
 == Installation ==
 
