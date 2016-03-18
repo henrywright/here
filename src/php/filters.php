@@ -6,4 +6,4 @@
  * @subpackage Filters
  */
 
-add_filter( 'get_avatar', 'here_filter_get_avatar', 12, 2 );
+add_filter( 'get_comment_author_link', 'here_comment_author_link', 10, 3 );
