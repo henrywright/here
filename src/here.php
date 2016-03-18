@@ -3,7 +3,7 @@
  * Plugin Name: Here
  * Plugin URI: https://github.com/henrywright/here
  * Description: See who's active on your WordPress site.
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Henry Wright
  * Author URI: https://about.me/henrywright
  * Text Domain: here
