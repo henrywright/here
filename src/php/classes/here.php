@@ -46,13 +46,6 @@ class Here {
 	 * @param string $email The email of the user.
 	 */
 	public function __construct( $email ) {
-
-		if ( ! isset( $email ) ) {
-			return;
-		}
-		if ( empty( $email ) ) {
-			return;
-		}
 		$this->hash = sha1( $email );
 	}
 

@@ -31,6 +31,11 @@ function here_i18n() {
  */
 function here_init() {
 	$user = wp_get_current_user();
+
+	if ( empty( $user->user_email ) ) {
+		return;
+	}
+
 	$here = new Here( $user->user_email );
 	$here->delete();
 	$here->set();
@@ -45,6 +50,11 @@ function here_init() {
  * @param object $comment The comment.
  */
 function here_insert_comment( $id, $comment ) {
+
+	if ( empty( $comment->comment_author_email ) ) {
+		return;
+	}
+
 	$here = new Here( $comment->comment_author_email );
 	$here->delete();
 	$here->set();
