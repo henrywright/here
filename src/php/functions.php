@@ -61,6 +61,34 @@ function here_insert_comment( $id, $comment ) {
 }
 
 /**
+ * Filter the post author.
+ *
+ * @since 1.1.0
+ *
+ * @param string $name The post author name.
+ */
+function here_post_author( $name ) {
+
+	if ( is_admin() ) {
+		return $name;
+	}
+
+	global $authordata;
+
+	if ( ! is_object( $authordata ) ) {
+		return $name;
+	}
+
+	$here = new Here( $authordata->user_email );
+
+	if ( false === $here->get() ) {
+		return $name;
+	}
+
+	return $name . '<img src="' . plugins_url( 'images/dot.png', dirname( __FILE__ ) ) . '" class="here" alt="">';
+}
+
+/**
  * Filter the comment author.
  *
  * @since 1.0.0
