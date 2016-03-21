@@ -1,7 +1,7 @@
 === Here ===
 Contributors: henry.wright
 Donate link: https://www.macmillan.org.uk/donate
-Tags: users
+Tags: activity, status, users
 Requires at least: 3.8
 Tested up to: 4.5.0
 Stable tag: 1.1.0
