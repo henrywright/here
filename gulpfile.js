@@ -4,11 +4,11 @@ var cssmin   = require('gulp-cssmin');
 var rename   = require('gulp-rename');
 var sequence = require('gulp-sequence');
 
-gulp.task('clean', function() {
+gulp.task('rm', function() {
 	return del(['dist']);
 });
 
-gulp.task('diff', function() {
+gulp.task('cp', function() {
 	return gulp.src('src/**/*')
 		.pipe(gulp.dest('dist'));
 });
@@ -20,4 +20,4 @@ gulp.task('compresscss', function() {
 		.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('build', sequence('clean', 'diff', ['compresscss']));
+gulp.task('build', sequence('rm', 'cp', ['compresscss']));
