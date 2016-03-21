@@ -16,7 +16,7 @@ Here makes use of the WordPress Transients API to keep a record of who's current
 
 == Installation ==
 
-1. Go to Plugins > Add New and search for `here`
+1. Go to Plugins > Add New and search for "here"
 2. Click on Install Now
 
 You can then go ahead and activate the plugin.
