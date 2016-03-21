@@ -51,26 +51,25 @@ function here_insert_comment( $id, $comment ) {
 }
 
 /**
- * Filter the comment author link.
+ * Filter the comment author.
  *
  * @since 1.0.0
  *
- * @param string $retval The comment author.
- * @param string $author The comment author's username.
+ * @param string $author The comment author name.
  * @param int $comment_id The comment ID.
+ * @param object $comment The comment.
  */
-function here_comment_author_link( $retval, $author, $comment_id ) {
-
-	$comment = get_comment( $comment_id );
+function here_comment_author( $author, $comment_id, $comment ) {
 
 	if ( empty( $comment->comment_author_email ) ) {
-		return $retval;
+		return $author;
 	}
 
 	$here = new Here( $comment->comment_author_email );
+
 	if ( false === $here->get() ) {
-		return $retval;
+		return $author;
 	}
 
-	return $retval . '<img src="' . plugins_url( 'images/dot.png', dirname( __FILE__ ) ) . '" class="here" alt="">';
+	return $author . '<img src="' . plugins_url( 'images/dot.png', dirname( __FILE__ ) ) . '" class="here" alt="">';
 }

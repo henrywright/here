@@ -6,4 +6,4 @@
  * @subpackage Filters
  */
 
-add_filter( 'get_comment_author_link', 'here_comment_author_link', 10, 3 );
+add_filter( 'get_comment_author', 'here_comment_author', 10, 3 );
