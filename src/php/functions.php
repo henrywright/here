@@ -71,6 +71,10 @@ function here_insert_comment( $id, $comment ) {
  */
 function here_comment_author( $author, $comment_id, $comment ) {
 
+	if ( is_admin() ) {
+		return $author;
+	}
+
 	if ( empty( $comment->comment_author_email ) ) {
 		return $author;
 	}
