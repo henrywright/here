@@ -16,6 +16,15 @@ function here_load_css() {
 }
 
 /**
+ * Load the plugin textdomain.
+ *
+ * @since 1.1.0
+ */
+function here_i18n() {
+	load_plugin_textdomain( 'here' );
+}
+
+/**
  * Set a transient if a page is hit.
  *
  * @since 1.0.0
