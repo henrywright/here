@@ -10,4 +10,4 @@ This document contains a curated list of changes made to this project.
  - Fixed the online indicator's placement.
 
 ## 1.0.0
- - Added 1.0.0.
+ - First release.
