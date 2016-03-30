@@ -9,7 +9,6 @@ Here makes use of the WordPress Transients API to keep a record of who's current
 ## Requirements
 
  - WordPress 3.8 or higher
- - BuddyPress 2.2 or higher
 
 The plugin may work with earlier versions but I haven't tested.
 
