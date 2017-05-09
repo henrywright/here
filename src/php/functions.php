@@ -85,7 +85,13 @@ function here_post_author( $name ) {
 		return $name;
 	}
 
-	return $name . '<img src="' . plugins_url( 'images/dot.png', dirname( __FILE__ ) ) . '" class="here" alt="">';
+	return sprintf(
+		'%1$s <img src="%2$s" class="%3$s" alt="%4$s"',
+		$name,
+		esc_url( plugins_url( 'images/dot.png', dirname( __FILE__ ) ) ),
+		esc_attr( 'here' ),
+		esc_attr( '' )
+	);
 }
 
 /**
@@ -113,5 +119,11 @@ function here_comment_author( $author, $comment_id, $comment ) {
 		return $author;
 	}
 
-	return $author . '<img src="' . plugins_url( 'images/dot.png', dirname( __FILE__ ) ) . '" class="here" alt="">';
+	return sprintf(
+		'%1$s <img src="%2$s" class="%3$s" alt="%4$s"',
+		$author,
+		esc_url( plugins_url( 'images/dot.png', dirname( __FILE__ ) ) ),
+		esc_attr( 'here' ),
+		esc_attr( '' )
+	);
 }
