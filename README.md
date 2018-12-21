@@ -1,10 +1,10 @@
 # Here
 
-Here makes use of the WordPress Transients API to keep a record of who's currently online. A green dot will appear next to each active user.
+Here makes use of the WordPress Transients API to keep a record of who is currently online. A green dot will appear next to each active user.
 
 ## Screenshots
 
-![A dot showing a user is online now](https://raw.githubusercontent.com/henrywright/here/master/assets/screenshot-1.png)
+![A dot showing a user is online](https://raw.githubusercontent.com/henrywright/here/master/assets/screenshot-1.png)
 
 ## Requirements
 
