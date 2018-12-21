@@ -35,7 +35,7 @@ class Here {
 	 * @since 1.0.0
 	 * @var int
 	 */
-	public $expire_in = 900;
+	public $expire_in = 360;
 
 	/**
 	 * Set properties.
