@@ -7,7 +7,7 @@ This document contains a curated list of changes made to this project.
  - Added language pack support.
 
 ## 1.0.1
- - Fixed the online indicator's placement.
+ - Fixed the placement of the online indicator.
 
 ## 1.0.0
  - First release.
