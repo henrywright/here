@@ -17,7 +17,7 @@
  * @package Here
  */
 
-require_once dirname( __FILE__ ) . '/php/classes/here.php';
-require_once dirname( __FILE__ ) . '/php/actions.php';
-require_once dirname( __FILE__ ) . '/php/filters.php';
-require_once dirname( __FILE__ ) . '/php/functions.php';
+require_once trailingslashit( dirname( __FILE__ ) ) . 'php/classes/here.php';
+require_once trailingslashit( dirname( __FILE__ ) ) . 'php/actions.php';
+require_once trailingslashit( dirname( __FILE__ ) ) . 'php/filters.php';
+require_once trailingslashit( dirname( __FILE__ ) ) . 'php/functions.php';
